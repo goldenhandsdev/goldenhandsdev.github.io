@@ -1,0 +1,24 @@
+<mvc:View
+  controllerName="goldenhandsdev.career.portfolio.controller.Master"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="Projects" class="masterPage">
+    <List id="projectList"
+          items="{/}"
+          mode="SingleSelectMaster"
+          selectionChange="onSelectionChange"
+          class="projectList">
+      <items>
+        <ObjectListItem
+          title="{title}"
+          number="{subtitle}"
+          numberUnit=""
+          intro="{technologies}"
+          type="Active"
+          press="onItemPress"
+          icon="{image}"
+        />
+      </items>
+    </List>
+  </Page>
+</mvc:View>

@@ -1,0 +1,81 @@
+{
+  "sap.app": {
+    "id": "goldenhandsdev.career.portfolio",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "Project Portfolio",
+    "description": "A UI5 master-detail app for project portfolios.",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "sourceTemplate": {
+      "id": "ui5template.basicSAPUI5ApplicationProject",
+      "version": "1.40.12"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": ["sap_fiori_3", "sap_belize"]
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "goldenhandsdev.career.portfolio.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {},
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "goldenhandsdev.career.portfolio.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "bypassed": {
+          "target": "Master"
+        }
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "Master",
+          "target": "Master"
+        },
+        {
+          "pattern": "detail/{id}",
+          "name": "Detail",
+          "target": "Detail"
+        }
+      ],
+      "targets": {
+        "Master": {
+          "viewName": "Master",
+          "viewLevel": 1
+        },
+        "Detail": {
+          "viewName": "Detail",
+          "viewLevel": 2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<mvc:View
+  controllerName="goldenhandsdev.career.portfolio.controller.Detail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page id="detailPage"
+        title="{title}"
+        class="detailPage"
+        showNavButton="true"
+        navButtonPress="onNavBack">
+    <VBox class="sapUiSmallMargin">
+      <Image src="{image}" width="100%" style="border-radius: 10px; margin-bottom: 1rem;" />
+      <Text text="{subtitle}" class="sapUiTinyMarginBottom" />
+      <Text text="{description}" class="sapUiSmallMarginBottom" />
+      <HBox>
+        <Text text="Technologies: " />
+        <Text text="{technologies}" />
+      </HBox>
+      <Link text="View on GitHub" target="_blank" href="{link}" class="sapUiTinyMarginTop" />
+    </VBox>
+  </Page>
+</mvc:View>

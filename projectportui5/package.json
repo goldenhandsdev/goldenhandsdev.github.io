@@ -1,0 +1,11 @@
+{
+  "name": "projectportui5",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ui5 serve"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3"
+  }
+}
