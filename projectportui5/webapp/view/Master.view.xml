@@ -7,8 +7,9 @@
         id="masterPage"
         title="{i18n>masterTitle}"
         showNavButton="false"
-        class="sapUiResponsiveMargin">
-        
+        enableScrolling="true"
+        class="masterPage">
+
         <content>
             <List
                 id="projectList"
@@ -17,7 +18,8 @@
                 selectionChange="onSelectionChange"
                 growing="true"
                 growingThreshold="20"
-                class="sapUiResponsiveMargin">
+                width="100%"
+                class="projectList">
                 
                 <ObjectListItem
                     id="projectListItem"

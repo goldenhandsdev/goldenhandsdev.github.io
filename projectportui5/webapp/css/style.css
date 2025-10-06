@@ -2,11 +2,24 @@
 
 .myAppDemoWT {
     height: 100%;
+    width: 100%;
 }
 
 /* Master View Styling */
+.masterPage {
+    width: 100%;
+    height: 100%;
+}
+
+.projectList {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
 .sapUiResponsiveMargin {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 /* Detail View Styling */
@@ -40,12 +53,35 @@
 /* Responsive Design */
 @media (max-width: 600px) {
     .sapUiResponsiveMargin {
-        margin: 0.5rem;
+        margin: 0.25rem;
     }
-    
+
     .sapUiMediumMargin {
-        margin: 0.5rem;
+        margin: 0.25rem;
     }
+
+    .projectList {
+        padding: 0.25rem;
+    }
+}
+
+/* Ensure full width for all containers */
+.sapMPage, .sapMPageHeader, .sapMPageSubHeader, .sapMPageFooter {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Fix list item overflow */
+.sapMListUl, .sapMListNoData {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Object List Item responsive fixes */
+.sapMOLI {
+    width: 100% !important;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Grid Layout for Detail View */
