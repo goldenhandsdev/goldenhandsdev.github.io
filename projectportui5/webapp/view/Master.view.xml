@@ -8,7 +8,7 @@
         title="{i18n>masterTitle}"
         showNavButton="false"
         enableScrolling="true"
-        class="masterPage">
+        class="masterPage sapUiResponsiveContentPadding">
 
         <content>
             <List
@@ -19,7 +19,7 @@
                 growing="true"
                 growingThreshold="20"
                 width="100%"
-                class="projectList">
+                class="projectList sapUiResponsiveContentPadding">
                 
                 <ObjectListItem
                     id="projectListItem"

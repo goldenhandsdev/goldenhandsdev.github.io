@@ -14,7 +14,6 @@
 .projectList {
     width: 100%;
     margin: 0;
-    padding: 0.5rem;
     box-sizing: border-box;
 }
 
@@ -58,10 +57,6 @@
 
     .sapUiMediumMargin {
         margin: 0.25rem;
-    }
-
-    .projectList {
-        padding: 0.25rem;
     }
 }
 
