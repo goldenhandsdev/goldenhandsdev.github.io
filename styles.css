@@ -225,6 +225,8 @@ nav .right a span {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 4px solid var(--card-background);
+  background-color: var(--card-background);
 }
 
 .avatar-image {
@@ -232,6 +234,7 @@ nav .right a span {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  transform: scale(1.1);
 }
 
 /* SECTION 2: Projects */
@@ -515,11 +518,13 @@ footer {
   .avatar-container {
     width: 250px;
     height: 250px;
+    border: 3px solid var(--card-background);
   }
 
   .avatar-image {
     width: 100%;
     height: 100%;
+    transform: scale(1.1);
   }
 
   .contact-section .group {
