@@ -64,19 +64,14 @@
             },
             "routes": [
                 {
-                    "name": "appHome",
-                    "pattern": "",
-                    "target": ["master"]
-                },
-                {
                     "name": "master",
-                    "pattern": "master",
+                    "pattern": "",
                     "target": ["master"]
                 },
                 {
                     "name": "detail",
                     "pattern": "project/{projectId}",
-                    "target": ["master", "detail"]
+                    "target": ["detail"]
                 }
             ],
             "targets": {
@@ -85,18 +80,14 @@
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewId": "master",
-                    "viewName": "Master",
-                    "controlAggregation": "pages",
-                    "controlId": "app"
+                    "viewName": "Master"
                 },
                 "detail": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewId": "detail",
-                    "viewName": "Detail",
-                    "controlAggregation": "pages",
-                    "controlId": "app"
+                    "viewName": "Detail"
                 }
             }
         }

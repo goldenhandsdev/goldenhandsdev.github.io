@@ -19,14 +19,28 @@ sap.ui.define([
             // Call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
-            // Create the views based on the url/hash
-            this.getRouter().initialize();
-
             // Set up the data model with hardcoded project data
             this._setDataModel();
 
             // Set up the resource model for i18n
             this._setResourceModel();
+
+            // Create the views based on the url/hash
+            this.getRouter().initialize();
+        },
+
+        /**
+         * Creates the content of the component
+         * @public
+         * @override
+         */
+        createContent: function () {
+            // Create the App view as the root view
+            return sap.ui.view({
+                viewName: "projectlist.view.App",
+                type: "XML",
+                id: "app"
+            });
         },
 
         /**
