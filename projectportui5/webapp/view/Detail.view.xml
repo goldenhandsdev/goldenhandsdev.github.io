@@ -1,21 +1,81 @@
 <mvc:View
-  controllerName="goldenhandsdev.career.portfolio.controller.Detail"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <Page id="detailPage"
-        title="{title}"
-        class="detailPage"
+    controllerName="projectlist.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout">
+    
+    <Page
+        id="detailPage"
+        title="{i18n>detailTitle}"
         showNavButton="true"
-        navButtonPress="onNavBack">
-    <VBox class="sapUiSmallMargin">
-      <Image src="{image}" width="100%" style="border-radius: 10px; margin-bottom: 1rem;" />
-      <Text text="{subtitle}" class="sapUiTinyMarginBottom" />
-      <Text text="{description}" class="sapUiSmallMarginBottom" />
-      <HBox>
-        <Text text="Technologies: " />
-        <Text text="{technologies}" />
-      </HBox>
-      <Link text="View on GitHub" target="_blank" href="{link}" class="sapUiTinyMarginTop" />
-    </VBox>
-  </Page>
+        navButtonPress="onNavBack"
+        class="sapUiResponsiveMargin">
+        
+        <content>
+            <ObjectHeader
+                id="projectHeader"
+                title="{projectTitle}"
+                number="{projectStart} - {projectEnd}"
+                numberUnit="Duration"
+                class="sapUiResponsiveMargin">
+                
+                <attributes>
+                    <ObjectAttribute
+                        title="Customer/Industry"
+                        text="{customerIndustry}" />
+                    <ObjectAttribute
+                        title="Role"
+                        text="{role}" />
+                    <ObjectAttribute
+                        title="Location"
+                        text="{location}" />
+                    <ObjectAttribute
+                        title="Technologies"
+                        text="{projectLanguage}" />
+                </attributes>
+                
+                <statuses>
+                    <ObjectStatus
+                        text="Active Project"
+                        state="Success" />
+                </statuses>
+            </ObjectHeader>
+            
+            <VBox class="sapUiMediumMargin">
+                <Title
+                    text="Project Description"
+                    level="H3"
+                    class="sapUiMediumMarginBottom" />
+                
+                <Text
+                    text="{projectDescription}"
+                    class="sapUiMediumMarginBottom" />
+                
+                <layout:Grid
+                    defaultSpan="L6 M6 S12"
+                    class="sapUiMediumMarginTop">
+                    
+                    <VBox class="sapUiMediumMargin">
+                        <Title text="Project Timeline" level="H4" />
+                        <Label text="Start Date:" class="sapUiTinyMarginTop" />
+                        <Text text="{projectStart}" />
+                        <Label text="End Date:" class="sapUiTinyMarginTop" />
+                        <Text text="{projectEnd}" />
+                    </VBox>
+                    
+                    <VBox class="sapUiMediumMargin">
+                        <Title text="Project Details" level="H4" />
+                        <Label text="Customer/Industry:" class="sapUiTinyMarginTop" />
+                        <Text text="{customerIndustry}" />
+                        <Label text="My Role:" class="sapUiTinyMarginTop" />
+                        <Text text="{role}" />
+                        <Label text="Technologies Used:" class="sapUiTinyMarginTop" />
+                        <Text text="{projectLanguage}" />
+                        <Label text="Location:" class="sapUiTinyMarginTop" />
+                        <Text text="{location}" />
+                    </VBox>
+                </layout:Grid>
+            </VBox>
+        </content>
+    </Page>
 </mvc:View>

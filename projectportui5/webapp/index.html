@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Project Portfolio UI5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List Application</title>
+    
+    <!-- SAPUI5 Bootstrap -->
     <script
-      id="sap-ui-bootstrap"
-      src="https://sdk.openui5.org/resources/sap-ui-core.js"
-      data-sap-ui-theme="sap_fiori_3"
-      data-sap-ui-resourceroots='{"goldenhandsdev.career.portfolio": "./"}'
-      data-sap-ui-oninit="module:goldenhandsdev.career.portfolio.Component"
-      data-sap-ui-compatVersion="edge"
-      data-sap-ui-async="true"
-      data-sap-ui-frameOptions="trusted">
+        id="sap-ui-bootstrap"
+        src="https://ui5.sap.com/1.120.0/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-libs="sap.m,sap.ui.core,sap.ui.layout"
+        data-sap-ui-resourceroots='{
+            "projectlist": "./"
+        }'
+        data-sap-ui-oninit="module:projectlist/index"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true">
     </script>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="sapUiBody" id="content">
-  </body>
+</head>
+<body class="sapUiBody" id="content">
+    <!-- Application content will be rendered here -->
+</body>
 </html>

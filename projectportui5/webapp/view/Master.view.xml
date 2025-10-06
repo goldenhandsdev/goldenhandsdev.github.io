@@ -1,24 +1,48 @@
 <mvc:View
-  controllerName="goldenhandsdev.career.portfolio.controller.Master"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <Page title="Projects" class="masterPage">
-    <List id="projectList"
-          items="{/}"
-          mode="SingleSelectMaster"
-          selectionChange="onSelectionChange"
-          class="projectList">
-      <items>
-        <ObjectListItem
-          title="{title}"
-          number="{subtitle}"
-          numberUnit=""
-          intro="{technologies}"
-          type="Active"
-          press="onItemPress"
-          icon="{image}"
-        />
-      </items>
-    </List>
-  </Page>
+    controllerName="projectlist.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page
+        id="masterPage"
+        title="{i18n>masterTitle}"
+        showNavButton="false"
+        class="sapUiResponsiveMargin">
+        
+        <content>
+            <List
+                id="projectList"
+                items="{/projects}"
+                mode="SingleSelectMaster"
+                selectionChange="onSelectionChange"
+                growing="true"
+                growingThreshold="20"
+                class="sapUiResponsiveMargin">
+                
+                <ObjectListItem
+                    id="projectListItem"
+                    title="{projectTitle}"
+                    number="{projectStartDate}"
+                    numberUnit="Start"
+                    press="onItemPress"
+                    type="Active">
+                    
+                    <attributes>
+                        <ObjectAttribute
+                            title="End Date"
+                            text="{projectEndDate}" />
+                        <ObjectAttribute
+                            title="Location"
+                            text="{location}" />
+                    </attributes>
+                    
+                    <firstStatus>
+                        <ObjectStatus
+                            text="{projectStartDate} - {projectEndDate}"
+                            state="Success" />
+                    </firstStatus>
+                </ObjectListItem>
+            </List>
+        </content>
+    </Page>
 </mvc:View>

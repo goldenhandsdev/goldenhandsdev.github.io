@@ -1,81 +1,114 @@
 {
-  "sap.app": {
-    "id": "goldenhandsdev.career.portfolio",
-    "type": "application",
-    "i18n": "i18n/i18n.properties",
-    "title": "Project Portfolio",
-    "description": "A UI5 master-detail app for project portfolios.",
-    "applicationVersion": {
-      "version": "1.0.0"
-    },
-    "sourceTemplate": {
-      "id": "ui5template.basicSAPUI5ApplicationProject",
-      "version": "1.40.12"
-    }
-  },
-  "sap.ui": {
-    "technology": "UI5",
-    "deviceTypes": {
-      "desktop": true,
-      "tablet": true,
-      "phone": true
-    },
-    "supportedThemes": ["sap_fiori_3", "sap_belize"]
-  },
-  "sap.ui5": {
-    "rootView": {
-      "viewName": "goldenhandsdev.career.portfolio.view.App",
-      "type": "XML",
-      "async": true,
-      "id": "app"
-    },
-    "dependencies": {
-      "minUI5Version": "1.120.0",
-      "libs": {
-        "sap.m": {},
-        "sap.ui.core": {},
-        "sap.f": {},
-        "sap.ui.layout": {}
-      }
-    },
-    "contentDensities": {
-      "compact": true,
-      "cozy": true
-    },
-    "models": {},
-    "routing": {
-      "config": {
-        "routerClass": "sap.m.routing.Router",
-        "viewType": "XML",
-        "viewPath": "goldenhandsdev.career.portfolio.view",
-        "controlId": "app",
-        "controlAggregation": "pages",
-        "bypassed": {
-          "target": "Master"
-        }
-      },
-      "routes": [
-        {
-          "pattern": "",
-          "name": "Master",
-          "target": "Master"
+    "_version": "1.58.0",
+    "sap.app": {
+        "id": "projectlist",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
         },
-        {
-          "pattern": "detail/{id}",
-          "name": "Detail",
-          "target": "Detail"
-        }
-      ],
-      "targets": {
-        "Master": {
-          "viewName": "Master",
-          "viewLevel": 1
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
         },
-        "Detail": {
-          "viewName": "Detail",
-          "viewLevel": 2
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
         }
-      }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "dataSource": "i18n",
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "projectlist.i18n.i18n"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "projectlist.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "appHome",
+                    "pattern": "",
+                    "target": ["master"]
+                },
+                {
+                    "name": "master",
+                    "pattern": "master",
+                    "target": ["master"]
+                },
+                {
+                    "name": "detail",
+                    "pattern": "project/{projectId}",
+                    "target": ["master", "detail"]
+                }
+            ],
+            "targets": {
+                "master": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "master",
+                    "viewName": "Master",
+                    "controlAggregation": "pages",
+                    "controlId": "app"
+                },
+                "detail": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "detail",
+                    "viewName": "Detail",
+                    "controlAggregation": "pages",
+                    "controlId": "app"
+                }
+            }
+        }
+    },
+    "sap.platform.hcp": {
+        "uri": "webapp",
+        "_version": "1.1.0"
+    },
+    "sap.app/dataSources": {
+        "i18n": {
+            "uri": "i18n/i18n.properties",
+            "type": "Properties"
+        }
     }
-  }
 }

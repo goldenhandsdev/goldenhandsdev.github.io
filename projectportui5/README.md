@@ -1,47 +1,75 @@
-# Project Portfolio UI5 (`projectportui5`)
+# SAPUI5 Project List Application
 
-A simple SAPUI5/OpenUI5 Master-Detail app to showcase your projects as a portfolio.
+A master-detail SAPUI5 application that displays a list of projects with detailed information.
 
 ## Features
 
-- Master-detail UI (project list and details)
-- Example projects loaded from JSON
-- Styled for a clean portfolio look
-- Easy to extend or deploy
+- **Master View**: Displays a list of projects with start date, end date, title, and location
+- **Detail View**: Shows comprehensive project information including description, role, customer/industry, and technologies
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Navigation**: Router-based navigation between master and detail views
+- **Hardcoded Data**: Contains 3 sample projects as specified in the PRD
 
-## Quick Start
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (for running a local server)
-- [UI5 CLI](https://sap.github.io/ui5-tooling/pages/GettingStarted/)
-
-### Install and Run
-
-```sh
-npm install --global @ui5/cli
-npm install
-ui5 serve
-```
-
-Then open [http://localhost:8080](http://localhost:8080).
-
----
-
-## Folder Structure
+## Project Structure
 
 ```
-webapp/
-  controller/   # JS controllers
-  view/         # XML views
-  model/        # JSON data
-  css/          # Custom styles
-  i18n/         # Texts
+projectportui5/
+├── webapp/
+│   ├── index.html          # Application entry point
+│   ├── index.js            # Bootstrap script
+│   ├── Component.js        # Main application component
+│   ├── manifest.json       # Application descriptor
+│   ├── controller/         # Controllers for views
+│   │   ├── App.controller.js
+│   │   ├── Master.controller.js
+│   │   └── Detail.controller.js
+│   ├── view/              # XML views
+│   │   ├── App.view.xml
+│   │   ├── Master.view.xml
+│   │   └── Detail.view.xml
+│   ├── css/               # Custom styles
+│   │   └── style.css
+│   └── i18n/              # Internationalization
+│       └── i18n.properties
+├── ui5.yaml               # UI5 tooling configuration
+├── package.json           # Node.js dependencies
+└── README.md              # This file
 ```
 
----
+## Sample Data
 
-## Credits
+The application includes 3 hardcoded projects:
 
-Created by goldenhandsdev.  
-Built with [OpenUI5](https://openui5.org/).
+1. **ERP Implementation** (Berlin, Germany) - Manufacturing industry
+2. **CRM Upgrade** (London, UK) - Retail industry  
+3. **Inventory Management** (New York, USA) - Logistics industry
+
+## Technologies Used
+
+- SAPUI5 1.120.0
+- sap.m library for mobile controls
+- sap.ui.layout for responsive layouts
+- Fiori 3 theme
+- JSON Model for data binding
+- Router for navigation
+
+## Running the Application
+
+1. Open `webapp/index.html` in a modern web browser
+2. The application will load with the master view showing the project list
+3. Click on any project to view its details
+4. Use the back button to return to the master view
+
+## Browser Compatibility
+
+- Chrome (latest)
+- Firefox (latest)
+- Edge (latest)
+- Safari (latest)
+
+## Development Notes
+
+- Code is modular and well-commented for AI code editor compatibility
+- Follows SAPUI5 Fiori design guidelines
+- Uses responsive controls for cross-device compatibility
+- Implements master-detail pattern as per SAPUI5 template

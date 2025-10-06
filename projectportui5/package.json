@@ -1,11 +1,21 @@
 {
-  "name": "projectportui5",
+  "name": "project-list-ui5",
   "version": "1.0.0",
-  "private": true,
+  "description": "SAPUI5 Project List Application - Master-Detail Pattern",
+  "main": "webapp/index.html",
   "scripts": {
-    "start": "ui5 serve"
+    "start": "ui5 serve",
+    "build": "ui5 build"
   },
+  "keywords": [
+    "sapui5",
+    "ui5",
+    "master-detail",
+    "project-list"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
   "devDependencies": {
-    "@ui5/cli": "^3"
+    "@ui5/cli": "^3.0.0"
   }
 }
