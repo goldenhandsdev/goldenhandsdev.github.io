@@ -8,7 +8,12 @@
             "version": "1.0.0"
         },
         "title": "{{appTitle}}",
-        "description": "{{appDescription}}"
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.19.0",
+            "toolsId": "57697a0b-8cb6-4f7b-b1eb-5c9662de84bb"
+        }
     },
     "sap.ui": {
         "technology": "UI5",
@@ -66,12 +71,16 @@
                 {
                     "name": "master",
                     "pattern": "",
-                    "target": ["master"]
+                    "target": [
+                        "master"
+                    ]
                 },
                 {
                     "name": "detail",
                     "pattern": "project/{projectId}",
-                    "target": ["detail"]
+                    "target": [
+                        "detail"
+                    ]
                 }
             ],
             "targets": {

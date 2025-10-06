@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css?v=2">
+  <script src="i18n.js"></script>
 
   <title>Golden Hands Dev - Portfolio</title>
 </head>
@@ -22,7 +23,7 @@
   <!-- NAVBAR -->
   <nav>
     <div class="left">
-      <a href="/">Golden Hands Dev</a>
+      <a href="/" data-i18n="nav.brand">Golden Hands Dev</a>
     </div>
 
     <div class="right">
@@ -44,17 +45,17 @@
 
       <a href="https://github.com/goldenhandsdev" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>
-        <span>Github</span>
+        <span data-i18n="nav.github">Github</span>
       </a>
 
       <a href="https://linkedin.com/in/goldenhandsdev" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
+        <span data-i18n="nav.linkedin">Linkedin</span>
       </a>
 
       <a href="mailto:taltunelli@proton.me">
         <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
+        <span data-i18n="nav.email">Email</span>
       </a>
     </div>
   </nav>
@@ -63,23 +64,23 @@
     <!-- SECTION 1: Hero -->
     <section class="hero-section">
       <div class="text">
-        <h2>Hi, I'm Golden Hands Dev 👋</h2>
-        <p>Welcome to my portfolio! I'm a passionate developer specializing in modern web technologies and enterprise solutions. I create innovative applications using cutting-edge frameworks and have experience with SAPUI5, React, Vue.js, and full-stack development. My goal is to build user-friendly, scalable solutions that make a real impact.</p>
+        <h2 data-i18n="hero.greeting">Hi, I'm Golden Hands Dev 👋</h2>
+        <p data-i18n="hero.description">Welcome to my portfolio! I'm a passionate developer specializing in modern web technologies and enterprise solutions. I create innovative applications using cutting-edge frameworks and have experience with SAPUI5, React, Vue.js, and full-stack development. My goal is to build user-friendly, scalable solutions that make a real impact.</p>
 
         <div class="links">
           <a href="#projects">
             <i class="fa-solid fa-laptop-code"></i>
-            <span>Projects</span>
+            <span data-i18n="hero.projects">Projects</span>
           </a>
-          
+
           <a href="#skills">
             <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
+            <span data-i18n="hero.skills">Skills</span>
           </a>
-          
+
           <a href="#contact">
             <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
+            <span data-i18n="hero.contact">Contact</span>
           </a>
         </div>
       </div>
@@ -93,51 +94,51 @@
 
     <!-- SECTION 2: Projects -->
     <section id="projects" class="projects-section">
-      <h2>Featured Projects</h2>
-      <div class="text">
+      <h2 data-i18n="projects.title">Featured Projects</h2>
+      <div class="text" data-i18n="projects.description">
         Here are some of my recent projects showcasing different technologies and approaches to modern web development.
       </div>
 
       <div class="project-cards">
         <div class="project-card">
           <div class="project-header">
-            <h3>SAPUI5 Project List Application</h3>
+            <h3 data-i18n="projects.sapui5.title">SAPUI5 Project List Application</h3>
             <div class="project-links">
               <a href="https://goldenhandsdev.github.io/projectportui5/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-external-link-alt"></i>
-                <span>Live Demo</span>
+                <span data-i18n="projects.sapui5.liveDemo">Live Demo</span>
               </a>
               <a href="https://github.com/goldenhandsdev/goldenhandsdev.github.io/tree/main/projectportui5" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
-                <span>Source</span>
+                <span data-i18n="projects.sapui5.source">Source</span>
               </a>
             </div>
           </div>
-          <p>A comprehensive SAPUI5 master-detail application following Fiori design guidelines. Features responsive design, router-based navigation, and showcases enterprise-level development practices.</p>
+          <p data-i18n="projects.sapui5.description">A comprehensive SAPUI5 master-detail application following Fiori design guidelines. Features responsive design, router-based navigation, and showcases enterprise-level development practices.</p>
           <div class="tech-stack">
-            <span class="tech">SAPUI5</span>
-            <span class="tech">JavaScript</span>
-            <span class="tech">Fiori</span>
-            <span class="tech">Responsive Design</span>
+            <span class="tech" data-i18n="projects.sapui5.tech1">SAPUI5</span>
+            <span class="tech" data-i18n="projects.sapui5.tech2">JavaScript</span>
+            <span class="tech" data-i18n="projects.sapui5.tech3">Fiori</span>
+            <span class="tech" data-i18n="projects.sapui5.tech4">Responsive Design</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-header">
-            <h3>Modern Web Applications</h3>
+            <h3 data-i18n="projects.modern.title">Modern Web Applications</h3>
             <div class="project-links">
               <a href="#contact">
                 <i class="fa-solid fa-envelope"></i>
-                <span>Contact for Details</span>
+                <span data-i18n="projects.modern.contactDetails">Contact for Details</span>
               </a>
             </div>
           </div>
-          <p>Various projects built with modern frameworks including React, Vue.js, and Node.js. Focus on clean code, performance optimization, and user experience.</p>
+          <p data-i18n="projects.modern.description">Various projects built with modern frameworks including React, Vue.js, and Node.js. Focus on clean code, performance optimization, and user experience.</p>
           <div class="tech-stack">
-            <span class="tech">React</span>
-            <span class="tech">Vue.js</span>
-            <span class="tech">Node.js</span>
-            <span class="tech">TypeScript</span>
+            <span class="tech" data-i18n="projects.modern.tech1">React</span>
+            <span class="tech" data-i18n="projects.modern.tech2">Vue.js</span>
+            <span class="tech" data-i18n="projects.modern.tech3">Node.js</span>
+            <span class="tech" data-i18n="projects.modern.tech4">TypeScript</span>
           </div>
         </div>
       </div>
@@ -145,74 +146,74 @@
 
     <!-- SECTION 3: Skills -->
     <section id="skills" class="skills-section">
-      <h2>Skills & Technologies</h2>
-      <div class="text">
+      <h2 data-i18n="skills.title">Skills & Technologies</h2>
+      <div class="text" data-i18n="skills.description">
         I work with a diverse range of technologies to build modern, scalable applications that meet business requirements and provide excellent user experiences.
       </div>
 
       <div class="cells">
         <div class="cell">
           <i class="fa-brands fa-html5"></i>
-          <span>HTML5</span>
+          <span data-i18n="skills.html5">HTML5</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-css3-alt"></i>
-          <span>CSS3</span>
+          <span data-i18n="skills.css3">CSS3</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-js-square"></i>
-          <span>JavaScript</span>
+          <span data-i18n="skills.javascript">JavaScript</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-react"></i>
-          <span>React.js</span>
+          <span data-i18n="skills.react">React.js</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-vuejs"></i>
-          <span>Vue.js</span>
+          <span data-i18n="skills.vue">Vue.js</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-node-js"></i>
-          <span>Node.js</span>
+          <span data-i18n="skills.node">Node.js</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-solid fa-database"></i>
-          <span>SAPUI5</span>
+          <span data-i18n="skills.sapui5">SAPUI5</span>
         </div>
-        
+
         <div class="cell">
           <i class="fa-brands fa-git-alt"></i>
-          <span>Git</span>
+          <span data-i18n="skills.git">Git</span>
         </div>
       </div>
     </section>
 
     <!-- SECTION 4: Contact -->
     <section id="contact" class="contact-section">
-      <h2>Get In Touch</h2>
+      <h2 data-i18n="contact.title">Get In Touch</h2>
 
       <div class="group">
-        <div class="text">
+        <div class="text" data-i18n="contact.description">
           I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss technology, or just want to connect, feel free to reach out. I'm particularly passionate about modern web development, enterprise solutions, and creating applications that make a difference.
         </div>
 
         <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" required>
+          <label for="name" data-i18n="contact.form.name">Name</label>
+          <input type="text" id="name" data-i18n="contact.form.name" required>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" required>
+          <label for="email" data-i18n="contact.form.email">Email</label>
+          <input type="email" id="email" data-i18n="contact.form.email" required>
 
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10" required></textarea>
+          <label for="message" data-i18n="contact.form.message">Message</label>
+          <textarea id="message" cols="30" rows="10" data-i18n="contact.form.message" required></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" data-i18n="contact.form.send">Send Message</button>
         </form>
       </div>
     </section>
@@ -220,7 +221,7 @@
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 Golden Hands Dev. Built with passion for modern web development.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 Golden Hands Dev. Built with passion for modern web development.</p>
       <div class="footer-links">
         <a href="https://github.com/goldenhandsdev" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-github"></i>
@@ -236,8 +237,8 @@
   </footer>
 
   <script>
-    // Language selector functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    // Language selector and i18n functionality
+    document.addEventListener('DOMContentLoaded', async function() {
       const languageToggle = document.getElementById('languageToggle');
       const languageDropdown = document.getElementById('languageDropdown');
       const currentLanguageSpan = document.getElementById('currentLanguage');
@@ -245,6 +246,9 @@
 
       // Load saved language preference
       const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+      // Initialize i18n with saved language
+      await window.i18n.init(savedLanguage);
       updateLanguageDisplay(savedLanguage);
 
       // Toggle dropdown
@@ -257,9 +261,13 @@
 
       // Handle language selection
       languageOptions.forEach(option => {
-        option.addEventListener('click', function(e) {
+        option.addEventListener('click', async function(e) {
           e.preventDefault();
           const selectedLang = this.getAttribute('data-lang');
+
+          // Change language in i18n system
+          await window.i18n.changeLanguage(selectedLang);
+
           updateLanguageDisplay(selectedLang);
           localStorage.setItem('selectedLanguage', selectedLang);
           languageDropdown.classList.remove('show');
