@@ -78,6 +78,98 @@ nav .right a span {
   margin-left: 5px;
 }
 
+/* LANGUAGE SELECTOR */
+.language-selector {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.language-trigger {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.language-trigger:hover {
+  background-color: var(--background-color);
+}
+
+.language-trigger.active {
+  background-color: var(--background-color);
+}
+
+.language-trigger .fa-chevron-down {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.language-trigger.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  min-width: 140px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.language-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.language-option:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.language-option.active,
+.language-option:active,
+.language-option:focus {
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+}
+
+.language-option:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.language-option:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
 /* SECTION 1: Hero */
 .hero-section {
   display: flex;
@@ -460,6 +552,18 @@ footer {
 
   nav .right a span {
     display: none;
+  }
+
+  .language-trigger span:not(.fa-chevron-down) {
+    display: none;
+  }
+
+  .language-selector {
+    margin-right: 15px;
+  }
+
+  .language-trigger {
+    padding: 8px;
   }
 
   .hero-section {

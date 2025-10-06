@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 
   <title>Golden Hands Dev - Portfolio</title>
 </head>
@@ -26,16 +26,32 @@
     </div>
 
     <div class="right">
+      <div class="language-selector">
+        <button class="language-trigger" id="languageToggle">
+          <i class="fa-solid fa-globe"></i>
+          <span id="currentLanguage">EN</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <a href="#" class="language-option" data-lang="en">
+            <span>English</span>
+          </a>
+          <a href="#" class="language-option" data-lang="de">
+            <span>Deutsch</span>
+          </a>
+        </div>
+      </div>
+
       <a href="https://github.com/goldenhandsdev" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>
         <span>Github</span>
       </a>
-      
+
       <a href="https://linkedin.com/in/goldenhandsdev" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
         <span>Linkedin</span>
       </a>
-      
+
       <a href="mailto:taltunelli@proton.me">
         <i class="fa-solid fa-envelope"></i>
         <span>Email</span>
@@ -218,5 +234,56 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Language selector functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const languageToggle = document.getElementById('languageToggle');
+      const languageDropdown = document.getElementById('languageDropdown');
+      const currentLanguageSpan = document.getElementById('currentLanguage');
+      const languageOptions = document.querySelectorAll('.language-option');
+
+      // Load saved language preference
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+      updateLanguageDisplay(savedLanguage);
+
+      // Toggle dropdown
+      languageToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        languageDropdown.classList.toggle('show');
+        languageToggle.classList.toggle('active');
+      });
+
+      // Handle language selection
+      languageOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          updateLanguageDisplay(selectedLang);
+          localStorage.setItem('selectedLanguage', selectedLang);
+          languageDropdown.classList.remove('show');
+          languageToggle.classList.remove('active');
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!languageToggle.contains(e.target) && !languageDropdown.contains(e.target)) {
+          languageDropdown.classList.remove('show');
+          languageToggle.classList.remove('active');
+        }
+      });
+
+      // Update language display
+      function updateLanguageDisplay(lang) {
+        const langMap = {
+          'en': 'EN',
+          'de': 'DE'
+        };
+        currentLanguageSpan.textContent = langMap[lang] || 'EN';
+      }
+    });
+  </script>
 </body>
 </html>
