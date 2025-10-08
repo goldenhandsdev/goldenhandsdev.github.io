@@ -211,30 +211,33 @@ nav .right a span {
 }
 
 .hero-section .headshot {
-  flex: 2;
+  flex: 1.2;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .avatar-container {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 4px solid var(--card-background);
+  border:  4px solid var(--card-background);
   background-color: var(--card-background);
 }
 
 .avatar-image {
+  background-size: cover;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
   transform: scale(1.1);
+  align-items: center;
+  justify-content: center;
+
 }
 
 /* SECTION 2: Projects */
