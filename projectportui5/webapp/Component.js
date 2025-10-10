@@ -413,7 +413,7 @@ sap.ui.define([
             // Get URL parameters
             var oUriParams = new URLSearchParams(window.location.search);
             var sLanguage = oUriParams.get("lang");
-
+            
             // Set language if provided and valid
             if (sLanguage && (sLanguage === "en" || sLanguage === "de")) {
                 sap.ui.getCore().getConfiguration().setLanguage(sLanguage);
