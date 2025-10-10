@@ -61,7 +61,9 @@ sap.ui.define([
     "customerIndustry": "Energy Supply and Transport Technology; Building Technology",
     "role": "Developer",
     "projectDescription": "Development of a UI5 application for capturing personnel master data, including creation of personnel master data, validation checks, and review of master data by the specialist department with storage in the personnel master upon approval.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "2",
@@ -74,7 +76,9 @@ sap.ui.define([
     "customerIndustry": "Energy Sector, Infrastructure",
     "role": "Developer",
     "projectDescription": "Development of a custom 'Fiori Service Tool' application for managing PM service orders with mobile conception and design in direct consultation with the customer. Features include creating/editing service orders (IW51/IW52) via Fiori, changing statuses (user and system status), selecting partners, notification types, technical locations, customer signature function, and automatic PDF dispatch of service notifications upon completion.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "3",
@@ -87,7 +91,9 @@ sap.ui.define([
     "customerIndustry": "Energy Supply and Transport Technology; Building Technology",
     "role": "Developer",
     "projectDescription": "Development of multiple custom UI5 applications, including one for forecasting plan values in the BW system. Tasks included reading data from the BW system, posting plan values to PSP elements via RFC call to ERP, using CDS Views and Smart Controls for data display, developing additional UI5 applications for status change requests, and enabling Excel download/upload of projects to/from ERP.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "4",
@@ -100,7 +106,9 @@ sap.ui.define([
     "customerIndustry": "Public Sector / Metrology",
     "role": "Developer",
     "projectDescription": "Design and development of two Fiori applications: one for creating and adjusting purchase requisitions in material management, and another for managing employee qualifications and training.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "5",
@@ -113,7 +121,9 @@ sap.ui.define([
     "customerIndustry": "IT Service and Consulting",
     "role": "Developer / Technical Consultant",
     "projectDescription": "Greenfield implementation of S/4HANA, including data migration from legacy systems using Migration Cockpit (LTMC), creation of custom migration objects via LTMOM, rollout and implementation of a custom time recording solution, new developments and enhancements for time recording, employee and performance reporting, customization of solutions (SAP GUI, UI5, Web Dynpro) to customer needs, and creation of various ABAP ALV reports for customer orders, prices, and conditions, along with form development for invoices and time records.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "6",
@@ -126,7 +136,9 @@ sap.ui.define([
     "customerIndustry": "Auditing, Fiduciary, and Consulting",
     "role": "Developer, Technical Consultant",
     "projectDescription": "Support for migration from ECC 6.0 to S/4HANA, and design and development of a planning tool using Web Dynpro.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "7",
@@ -139,7 +151,9 @@ sap.ui.define([
     "customerIndustry": "Public Sector / Canton of Zürich",
     "role": "Developer",
     "projectDescription": "Rollout and implementation of a custom time recording solution, including new developments and enhancements for time recording, employee, and performance reporting, and customization of solutions (SAP GUI, UI5, Web Dynpro) to customer needs.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "8",
@@ -152,7 +166,9 @@ sap.ui.define([
     "customerIndustry": "Food Retail",
     "role": "SAP SRM Consultant and Developer",
     "projectDescription": "Rollout of internal SRM UI Addon solution components, coordination of transports, importing solution components into the customer system, customization and testing of implemented solutions, and creation of training materials and documentation.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "9",
@@ -165,7 +181,9 @@ sap.ui.define([
     "customerIndustry": "Automotive Supplier, Filtration",
     "role": "SAP SRM Fiori Consultant and Developer",
     "projectDescription": "Implementation of an extension for the Fiori application 'Confirm Goods Receipt,' including configuration and commissioning of the application on the customer system, customization of approval emails for Fiori application navigation, and support for functional and acceptance testing, as well as production deployment.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "10",
@@ -178,7 +196,9 @@ sap.ui.define([
     "customerIndustry": "Automotive Industry",
     "role": "SAPUI5 Developer",
     "projectDescription": "Implementation of an extension for the Fiori application 'Perform Source Determination,' including configuration and commissioning of an SAP WEB IDE installation on the customer system, creation of an extension application, implementation of customer-specific extensions, and coordination between external and internal project team members and project management.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "11",
@@ -191,7 +211,9 @@ sap.ui.define([
     "customerIndustry": "Internet Service Provider",
     "role": "SAP SRM Consultant and Developer",
     "projectDescription": "Implementation of an SAP Business Workflow, including support for proposal creation, conducting workshops for requirement gathering, creating a technical specification, coordinating with external consultants, performing workflow customizing, creating a process schema, implementing workflow logic, and supporting functional and acceptance tests.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "12",
@@ -204,7 +226,9 @@ sap.ui.define([
     "customerIndustry": "Food Industry",
     "role": "SAP SRM Developer",
     "projectDescription": "Enhancements in SAP Contract Management, including creation of a custom POWL, Excel upload of contracts, and extension of CM reporting.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "13",
@@ -217,7 +241,9 @@ sap.ui.define([
     "customerIndustry": "Automotive Supplier",
     "role": "SAP ECC Developer",
     "projectDescription": "Implementation of XML message output for ECC purchase orders, including MM customizing for message output, implementation of XML transformation and email output, and coordination of requirements with the specialist department and end customers.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "14",
@@ -230,7 +256,9 @@ sap.ui.define([
     "customerIndustry": "Oil and Gas",
     "role": "SAP SRM Consultant and Developer",
     "projectDescription": "Implementation of central data maintenance and automatic distribution to multiple ECC systems in Contract Management, including creation of a concept for data storage and automatic distribution, implementation of customer validation, and message output.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "15",
@@ -243,7 +271,9 @@ sap.ui.define([
     "customerIndustry": "Internal",
     "role": "SAP Fiori/SAPUI5 Developer",
     "projectDescription": "Development of a hybrid SAPUI5 application with a barcode scanner for purchase order creation, including creation of a technical concept and feasibility analysis, implementation using SAP Web IDE, testing and development on the Hana Cloud Platform, functional testing with the Hybrid App Toolkit Plugin, and support for marketing and customer proposals.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "16",
@@ -256,7 +286,9 @@ sap.ui.define([
     "customerIndustry": "Mechanical Engineering",
     "role": "SAP SRM Consultant and Developer",
     "projectDescription": "Customer-specific enhancements in the shopping cart and sourcing cockpit, including implementation of custom fields, search criteria, texts, and extension of search help criteria and POWL display.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "17",
@@ -269,7 +301,9 @@ sap.ui.define([
     "customerIndustry": "Research Center",
     "role": "SAP SRM/ECC Consultant and Developer",
     "projectDescription": "Transfer of external purchase requisitions from SAP PM, including implementation of RFC transfer with data validation and mapping, transfer of customer-specific fields, and implementation of document locking, release, and status updates in respective systems.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "18",
@@ -282,7 +316,9 @@ sap.ui.define([
     "customerIndustry": "Internal",
     "role": "SAP Fiori/SAPUI5 Developer",
     "projectDescription": "Development of an SAP Fiori application based on SAPUI5 for creating 'freitext' shopping carts, using SAP Web IDE and Hana Cloud Platform.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "19",
@@ -295,7 +331,9 @@ sap.ui.define([
     "customerIndustry": "Oil and Gas",
     "role": "SAP SRM and ECC Developer",
     "projectDescription": "Enhancement of an existing contract management system, including implementation of additional Web Dynpro elements for data maintenance (partner roles), implementation of data distribution to ECC contracts in a multi-ERP environment, and creation of Dynpros for displaying additional data in the ECC system.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "20",
@@ -308,7 +346,9 @@ sap.ui.define([
     "customerIndustry": "IT Services",
     "role": "SAP Fiori Consultant",
     "projectDescription": "Configuration of a Fiori application in the SRM environment, including identification of necessary system components and prerequisites, configuration and commissioning of the application, and support for functional tests.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "21",
@@ -321,7 +361,9 @@ sap.ui.define([
     "customerIndustry": "Media, Film, and Music",
     "role": "SAP SRM Developer",
     "projectDescription": "Implementation of a multi-level BRF workflow, including workflow customizing and creation of a process schema and implementation of workflow logic.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "22",
@@ -334,7 +376,9 @@ sap.ui.define([
     "customerIndustry": "Internal Project",
     "role": "SAP SRM Developer",
     "projectDescription": "Enhancements and implementations for internal demo systems, including extension of the internal workflow framework for process-oriented BRF workflows, extension of the internal Web Dynpro UI framework, and support and coordination for rollouts of internal solutions.",
-    "projectLanguage": "English"
+    "projectLanguage": "English",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   },
   {
     "id": "23",
@@ -347,7 +391,9 @@ sap.ui.define([
     "customerIndustry": "Oil and Gas",
     "role": "SAP Fiori Consultant and Developer",
     "projectDescription": "Extension and configuration of a Fiori application for travel request approval, including identification of necessary system components and prerequisites, creation of functional and technical concepts for commissioning and extension, implementation of extensions for displaying additional customer fields, and support for functional and acceptance tests and production deployment.",
-    "projectLanguage": "German"
+    "projectLanguage": "German",
+    "projectStatus": "Success",
+    "projectStatusDescription": "Project completed."
   }
 ]
             };

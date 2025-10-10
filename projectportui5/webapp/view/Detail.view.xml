@@ -36,8 +36,8 @@
                 
                 <statuses>
                     <ObjectStatus
-                        text="Active Project"
-                        state="Success" />
+                        text="{projectStatusDescription}"
+                        state="{projectStatus}" />
                 </statuses>
             </ObjectHeader>
             
