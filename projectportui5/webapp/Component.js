@@ -19,6 +19,9 @@ sap.ui.define([
             // Call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
+            // Set language from URL parameter if provided
+            this._setLanguageFromURL();
+
             // Set up the data model with hardcoded project data
             this._setDataModel();
 
@@ -400,6 +403,21 @@ sap.ui.define([
 
             var oModel = new JSONModel(oData);
             this.setModel(oModel);
+        },
+
+        /**
+         * Sets language from URL parameter
+         * @private
+         */
+        _setLanguageFromURL: function () {
+            // Get URL parameters
+            var oUriParams = new URLSearchParams(window.location.search);
+            var sLanguage = oUriParams.get("lang");
+
+            // Set language if provided and valid
+            if (sLanguage && (sLanguage === "en" || sLanguage === "de")) {
+                sap.ui.getCore().getConfiguration().setLanguage(sLanguage);
+            }
         },
 
         /**

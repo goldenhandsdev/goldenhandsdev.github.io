@@ -104,7 +104,7 @@
           <div class="project-header">
             <h3 data-i18n="projects.sapui5.title">SAPUI5 Project List Application</h3>
             <div class="project-links">
-              <a href="https://goldenhandsdev.github.io/projectportui5/" target="_blank" rel="noopener noreferrer">
+              <a href="https://goldenhandsdev.github.io/projectportui5/" target="_blank" rel="noopener noreferrer" id="ui5ProjectLink">
                 <i class="fa-solid fa-external-link-alt"></i>
                 <span data-i18n="projects.sapui5.liveDemo">Live Demo</span>
               </a>
@@ -317,6 +317,19 @@
           'de': 'DE'
         };
         currentLanguageSpan.textContent = langMap[lang] || 'EN';
+
+        // Update UI5 project link with language parameter
+        updateUI5ProjectLink(lang);
+      }
+
+      // Update UI5 project link with language parameter
+      function updateUI5ProjectLink(lang) {
+        const ui5Link = document.getElementById('ui5ProjectLink');
+        if (ui5Link) {
+          const baseUrl = 'https://goldenhandsdev.github.io/projectportui5/';
+          const urlWithLang = `${baseUrl}?lang=${lang}`;
+          ui5Link.href = urlWithLang;
+        }
       }
     });
   </script>
